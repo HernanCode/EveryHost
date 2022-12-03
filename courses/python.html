@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="../style.css">
+
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--<title>Dashboard Sidebar Menu</title>-->
+</head>
+
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                        <img src="#" alt="">
+                    </span>
+
+                <div class="text logo-text">
+                    <span class="name">Samuel Hernan</span>
+
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <!--Barra de busqueda
+                    <li class="search-box">
+                        <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                    </li>
+
+                    -->
+
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="html.html">
+                            <i class='bx bxl-html5 icon'></i>
+                            <span class="text nav-text">HTML</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="css.html">
+                            <i class='bx bxl-css3 icon'></i>
+                            <span class="text nav-text">CSS</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="js.html">
+                            <i class='bx bxl-javascript icon'></i>
+                            <span class="text nav-text">JavaScript</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="python.html">
+                            <i class='bx bxl-python icon'></i>
+                            <span class="text nav-text">Python</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="docker.html">
+                            <i class='bx bxl-docker icon'></i>
+                            <span class="text nav-text">Docker</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="lxc.html">
+                            <i class='bx bx-cube-alt icon'></i>
+                            <span class="text nav-text">LXC</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="linux.html">
+                            <i class='bx bxs-terminal icon'></i>
+                            <span class="text nav-text">Linux</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="../index.html">
+                        <i class='bx bx-arrow-back icon'></i>
+                        <span class="text nav-text">Volver</span>
+                    </a>
+                </li>
+
+            </div>
+        </div>
+
+    </nav>
+    <section class="home">
+        <div class="text">
+            <div class="part">
+                <h2>Listas</h2>
+                <p>Podemos crear listas de palabras y asignarlas a una variable, por ejemplo:</p>
+                <div class="code">
+                    lista=['PC','Grafica','Ordenador,'Portátil'] <br> print(lista)
+                    <br> <b>Salida:</b> ['PC','Grafica','Ordenador Portátil']
+                </div>
+                <p>Para añadir palabras a una lista podemos usar .apppend. </p>
+                <div class="code">
+                    lista=['PC','Grafica','Ordenador,'Portátil'] <br> lista.append('Fuente de alimentación')
+                    <br> <b>Salida:</b> ['PC','Grafica','Ordenador, 'Portátil', Fuente de alimentación]
+                </div>
+                <p>De la misma forma podemos hacer que sea el usuario el que introduzca la palabra</p>
+                <div class="code">
+                    lista=['PC','Grafica','Ordenador,'Portátil'] <br> lista.append(input("Introduce una palabra: "))
+                    <br> <b>Salida:</b> Introduce una palabra: Fuente de alimentación<br> ['PC','Grafica','Ordenador, 'Portátil', 'Fuente de alimentación']
+                </div>
+            </div>
+            <div class="part">
+                <h2>Diccionarios</h2>
+                <p>Con los diccionarios podemos asingar palabras y darles un valor</p>
+                <div class="code">
+                    notas={"Trabajo 1":7,"Trabajo 2":8,"Trabajo 3":5,"Trabajo 4":6} <br> print(notas[Trabajo 1])
+                    <br> <b>Salida:</b> 7
+                </div>
+                <p>Tambien podemos cambiar el valor del diccionario, esto es util por ejemplo si queremos pedir que un usuario introduzca un dato.
+                </p>
+                <div class="code">
+                    notas={"Trabajo 1":7,"Trabajo 2":8,"Trabajo 3":5,"Trabajo 4":6} <br> nota = int(input("Que nota sacaste en el primer trabajo?: "))
+                    <br>notas[Trabajo 1] = nota <br> print(notas[Trabajo 1])
+                    <br><b>Salida:</b> Que nota sacaste en el primer trabajo?: 7
+                    <br>7
+                </div>
+            </div>
+            <div class="part">
+                <h2>Bucles </h2>
+                <p>Un bucle sirve para repetir cierta parte del codigo, aunque también tiene muchos otros usos</p>
+                <h2>While</h2>
+                <p>El bucle while (mientras) tiene la siguiente estructura: <br></p>
+                <div class="code">
+                    contador = 0 <br>while contador &lt 10: <br># Ejecuta el bloque de código aquí <br> # Siempre que el contador sea inferior a 10 </div>
+                <p>Ejemplo
+                </p>
+                <div class="code">
+                    dia = 0 semana = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sabado', 'Domingo'] <br>while dia &lt 7: <br>/ print( "Hoy es " + semana[dia]) <br>/ dia +=1 <b>Salida: </b> Hoy es Lunes Hoy es Martes...
+                </div>
+                <h2>Bucles for</h2>
+                <p>El bucle for se utiliza para recorrer los elementos de un objeto iterable (lista, tupla, conjunto, diccionario, …) y ejecutar un bloque de código. En cada paso de la iteración se tiene en cuenta a un único elemento del objeto iterable,
+                    sobre el cuál se pueden aplicar una serie de operaciones.
+                </p>
+                <div class="code">
+                    nums = [4, 78, 9, 84]<br> for n in nums:<br> // print(n)<br>
+                    <b>Salida:</b> 4 78 9 84
+                </div>
+            </div>
+    </section>
+    <!----======== JS ======== -->
+    <script src="../sidebar.js"></script>
+
+    </div>
+</body>
+
+</html>
