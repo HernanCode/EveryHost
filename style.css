@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
 html {
@@ -11,6 +10,7 @@ html {
 
 body {
     overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
 }
 
 section {
@@ -19,7 +19,7 @@ section {
 }
 
 .main {
-    background-color: rgb(47, 47, 65);
+    background-color: #1f1f1f;
     /*background: url(images/image.jpg)no-repeat center center / cover;*/
 }
 
@@ -44,25 +44,19 @@ nav {
     z-index: 1000;
 }
 
-.logo {
-    font-size: 2.5rem;
-    color: white;
-    font-weight: 400;
-}
-
 nav a {
     color: rgb(255, 255, 255);
     font-size: 1.6rem;
     text-transform: capitalize;
     text-decoration: none;
-    padding: 24px 20px;
+    padding: 10px;
     font-weight: 900;
 }
 
 .nav-items a:hover {
     color: rgb(255, 255, 255);
     transition: all 0.5s;
-    background-color: #695CFE;
+    background-color: rgb(0, 105, 255);
     border-radius: 5px;
 }
 
@@ -92,16 +86,77 @@ nav.sticky {
 }
 
 nav.sticky a {
-    color: black;
+    color: rgb(36, 51, 90);
+    height: 30px;
 }
 
 nav.sticky a:hover {
     color: rgb(255, 255, 255);
     transition: all 0.4s;
-    background-color: #695CFE;
+    background-color: rgb(0, 105, 255);
     border-radius: 5px;
 }
 
 nav.sticky .logo {
-    color: black;
+    color: rgb(36, 51, 90);
+}
+
+.logo img {
+    height: 30px;
+    opacity: 1;
+}
+
+.container {
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    margin: auto;
+    background-color: rgb(0, 105, 255);
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    height: 80%;
+    border-radius: 6px;
+    box-shadow: black;
+    flex-direction: column;
+    display: flex;
+}
+
+.title {
+    top: 25%;
+    font-family: 'Epilogue';
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+    flex: 1;
+    width: 300px;
+    font-size: 30px;
+    font-weight: 1000;
+    text-align: center;
+}
+
+.text {
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+    flex: 1;
+    width: 300px;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.leftcloud {
+    height: 273px;
+    position: absolute;
+    top: 120px;
+    width: 211px;
+}
+
+.rightcloud {
+    height: 273px;
+    position: absolute;
+    right: 0;
+    top: 90px;
+    width: 211px;
 }

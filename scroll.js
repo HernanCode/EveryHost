@@ -1,11 +1,11 @@
 window.addEventListener('scroll', function() {
     let navbar = document.querySelector('nav');
+    let image = document.querySelector('.image');
     if (window.pageYOffset > 0) {
         navbar.classList.add('sticky');
+        image.classList.add('sticky)')
     } else {
         navbar.classList.remove('sticky');
-    }
-    if (this.window.pageYOffset > 12) {
-        /*insertar codigo idea poner un div que aparezca*/
+        image.classList.remove('sticky)')
     }
 });
