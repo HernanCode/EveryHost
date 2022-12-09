@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 10px;
+    background-color: rgb(96, 96, 255);
+}
+
+nav {
+    height: 7vh;
+    padding: 0 4em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    transition: all 0.5s;
+    z-index: 1000;
+    background: rgb(255, 255, 255);
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: black;
+    font-weight: 400;
+}
+
+nav a {
+    color: black;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 24px 20px;
+    margin-left: 4rem;
+    font-weight: 900;
+}
+
+nav a:hover {
+    transition: all 0.5s;
+    background-color: #695CFE;
+    color: white;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+}
