@@ -90,6 +90,7 @@ nav a {
 
 nav.sticky {
     background: rgba(255, 255, 255, 1);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 nav.sticky a {
@@ -102,6 +103,7 @@ nav.sticky a:hover {
     transition: all 0.4s;
     background-color: rgb(0, 105, 255);
     border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
 }
 
 nav.sticky .logo {
