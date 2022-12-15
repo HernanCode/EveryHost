@@ -76,7 +76,7 @@ nav.sticky a:hover {
     transition: all 0.4s;
     background-color: rgb(0, 105, 255);
     border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+    box-shadow: rgba(87, 87, 87, 0.4) 0px 5px;
 }
 
 nav img {
@@ -166,11 +166,12 @@ nav img.sticky {
     text-decoration: none;
     padding: 10px;
     font-weight: 900;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(87, 87, 87, 0.4) 0px 5px;
 }
 
 .links a:hover {
     background-color: #dee3ed;
+    box-shadow: rgba(87, 87, 87, 0.4) 0px 5px;
 }
 
 .leftcloud {
