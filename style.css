@@ -1,17 +1,28 @@
+/*Estilo de toda la página sin bordes ni margenes*/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+/*Estílo del html, tamaños en em y letra poppins*/
+
 html {
     font-size: 1em;
     font-family: 'Poppins', sans-serif;
 }
 
+
+/*Enlaces sin decoración*/
+
 a {
     text-decoration: none;
 }
+
+
+/*Encabezado*/
 
 header {
     display: flex;
@@ -31,6 +42,11 @@ nav {
     z-index: 1000;
 }
 
+nav img {
+    height: 30px;
+    opacity: 1;
+}
+
 nav a {
     color: rgb(255, 255, 255);
     font-size: 1.7em;
@@ -46,6 +62,9 @@ nav a {
     background-color: rgb(0, 105, 255);
     border-radius: 5px;
 }
+
+
+/*Clase extra al hacer scroll*/
 
 nav.sticky {
     background: rgba(255, 255, 255, 1);
@@ -65,15 +84,13 @@ nav.sticky a:hover {
     box-shadow: rgba(87, 87, 87, 0.4) 0px 5px;
 }
 
-nav img {
-    height: 30px;
-    opacity: 1;
-}
-
 nav img.sticky {
     height: 30px;
     opacity: 1;
 }
+
+
+/*Media query para eliminar nubes y otros efectos*/
 
 @media screen and (max-width: 800px) {
     .nav-items {
@@ -109,12 +126,23 @@ nav img.sticky {
     }
 }
 
+@media screen and (max-width:300px) {
+    .links {
+        display: flex;
+        flex-direction: column;
+    }
+    .links a {
+        margin-top: 6px;
+    }
+}
+
 .col-cn {
     color: white;
     background-color: rgb(0, 105, 255);
     border-radius: 0px 0px 6px 6px;
     flex-direction: column;
     display: flex;
+    height: 100%;
 }
 
 .info {
@@ -126,9 +154,24 @@ nav img.sticky {
 }
 
 .row-cn {
+    justify-content: space-between;
     flex: 1;
-    margin-top: 200px;
+    margin-top: 150px;
     display: flex;
+}
+
+.colinfo {
+    padding: 7px 5px;
+    max-width: 300px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(36, 51, 90);
+    font-size: 1.3em;
+    border-radius: 5px;
+    font-weight: 700;
+    font-family: 'Epilogue';
+    flex: 1;
+    text-align: center;
+    margin: 10px;
 }
 
 .info h4 {
@@ -151,7 +194,6 @@ nav img.sticky {
 .links {
     text-align: center;
     margin-top: 50px;
-    flex: 2;
 }
 
 .links a {
