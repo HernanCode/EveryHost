@@ -185,3 +185,13 @@ section {
     margin-top: 10px;
     font-weight: 500;
 }
+
+#messages {
+    font-size: 67%;
+    background-color: rgb(168, 168, 168);
+    border-radius: 5px;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+}

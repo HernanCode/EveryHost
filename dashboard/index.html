@@ -1,100 +1,45 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!----======== CSS ======== -->
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-
-    <!----===== Boxicons CSS ===== -->
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-
-    <!--<title>Dashboard Sidebar Menu</title>-->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link href='https://fonts.googleapis.com/css?family=Epilogue' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="sidebar close">
-        <header>
-            <div class="image-text">
-                <span class="image">
-                        <img src="#" alt="">
-                    </span>
-
-                <div class="text logo-text">
-                    <span class="name">Samuel Hernan</span>
-
-                </div>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="../index.html"><img src="../assets/logo.png" alt=""></a>
             </div>
-
-            <i class='bx bx-chevron-right toggle'></i>
-        </header>
-
-        <div class="menu-bar">
-            <div class="menu">
-                <!--Barra de busqueda
-                    <li class="search-box">
-                        <i class='bx bx-search icon'></i>
-                    <input type="text" placeholder="Search...">
-                    </li>
-
-                    -->
-
-
-                <ul class="menu-links">
-                    <li class="nav-link">
-                        <a href="apuntes2/index.html">
-                            <i class='bx bx-home-alt icon'></i>
-                            <span class="text nav-text">Inicio</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bxl-docker icon'></i>
-                            <span class="text nav-text">Hosting</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-server icon'></i>
-                            <span class="text nav-text">Servidor</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-link">
-                        <a href="courses/index.html">
-                            <i class='bx bx-chalkboard icon'></i>
-                            <span class="text nav-text">Cursos</span>
-                        </a>
-                    </li>
-
-                </ul>
+            <div class="nav-items">
+                <img src="../assets/github.png" alt="">
             </div>
-
-            <div class="bottom-content">
-                <li class="">
-                    <a href="#">
-                        <i class='bx bx-log-out icon'></i>
-                        <span class="text nav-text">Logout</span>
-                    </a>
-                </li>
-
+        </nav>
+    </header>
+    <section>
+        <div class="sidebar">
+            <div class="sidebar-top-items">
+                <a href="#">
+                    <i class="icon icon-1 ri-layout-grid-line"></i>
+                </a>
+                <a href="#">
+                    <i class="icon icon-2 ri-terminal-fill"></i>
+                </a>
+            </div>
+            <div class="sidebar-bottom-items">
+                <a href="#">
+                    <i class=" icon icon-3 ri-logout-box-r-line"></i>
+                </a>
             </div>
         </div>
-
-    </nav>
-    <section class="home">
-        <div class="text">Texto de prueba para volver al commit anterior</div>
-
     </section>
-    <!----======== JS ======== -->
-    <script src="sidebar.js"></script>
-
-    </div>
 </body>
 
 </html>
