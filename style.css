@@ -104,12 +104,6 @@ nav img.sticky {
     }
 }
 
-@media screen and (min-width:801px) {
-    .links {
-        display: none;
-    }
-}
-
 @media screen and (max-width:500px) {
     /*Mobile version*/
     nav img {
@@ -134,6 +128,7 @@ nav img.sticky {
 }
 
 .col-cn {
+    padding-top: 100px;
     color: white;
     background-color: rgb(0, 105, 255);
     border-radius: 0px 0px 6px 6px;
@@ -145,7 +140,6 @@ nav img.sticky {
 
 .info {
     font-size: 2em;
-    margin-top: 100px;
     font-family: 'Epilogue';
     flex: 1;
     text-align: center;
@@ -157,16 +151,18 @@ nav img.sticky {
     margin-top: 100px;
     display: flex;
     flex-wrap: wrap;
+    
 }
-
+.first-block{
+    margin-bottom: 80px;
+}
 .m-10 {
     margin-top: 10px;
 }
 
 .colinfo {
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    padding: 7px 5px;
-    max-width: 300px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    padding: 30px;
     background-color: rgb(255, 255, 255);
     color: rgb(36, 51, 90);
     font-size: 1.3em;
@@ -177,14 +173,12 @@ nav img.sticky {
     text-align: center;
     margin: 10px;
 }
-
 .info h4 {
     font-size: 1em;
 }
 
 .info p {
     margin-top: 50px;
-    position: relative;
     flex: 1;
     font-size: 0.7em;
     font-weight: 800;
@@ -197,8 +191,8 @@ nav img.sticky {
 
 .links {
     text-align: center;
-    margin-top: 50px;
-}
+    margin-bottom: 60px;
+} 
 
 .links a {
     background-color: white;
@@ -225,7 +219,8 @@ nav img.sticky {
 footer{
     margin: 0;
     width: 100%;
-    background-color: #ffffff;
+    background-color: rgb(195, 206, 223);
+    margin-top: 100px;
 }
 footer .first{
     width: 100%;
@@ -244,7 +239,7 @@ footer .first .box figure{
     align-items: center;
 }
 footer .first .box  figure img{
-    width: 6em;
+    width: 4em;
 }
 footer .first .box  h2{
     color: rgb(36, 51, 90);
@@ -272,10 +267,10 @@ footer .first .social a:hover{
     box-shadow: rgba(87, 87, 87, 0.4) 0px 5px;
 }
 footer .license{
-    background-color: rgb(195, 206, 223);
+    background-color: rgb(0, 105, 255);
     padding: 15px 10px;
     text-align: center;
-    color: rgb(36, 51, 90);
+    color: rgb(255, 255, 255);
 }
 footer .license small{
     font-size: 1em;
