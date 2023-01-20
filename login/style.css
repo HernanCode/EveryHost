@@ -110,6 +110,9 @@ section {
     border-radius: 6px;
     display: flex;
 }
+.main{
+    display: flex;
+}
 
 
 /*Login & Register title*/
@@ -188,10 +191,23 @@ section {
 
 #messages {
     font-size: 67%;
-    background-color: rgb(168, 168, 168);
+    background-color: rgb(195, 206, 223);
     border-radius: 5px;
     margin-top: 10px;
-    color: rgb(255, 255, 255);
+    color: rgb(36, 51, 90);
+    box-shadow: rgb(46, 189, 27) 0px 0px 0px 2px;
     text-align: center;
     padding: 10px;
+}
+
+#error{
+    font-size: 67%;
+    background-color: rgb(195, 206, 223);
+    box-shadow: rgb(255, 0, 0) 0px 0px 0px 2px;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: rgb(36, 51, 90);
+    text-align: center;
+    padding: 10px;
+
 }

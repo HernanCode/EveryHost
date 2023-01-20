@@ -73,12 +73,12 @@ li {
 }
 
 section {
-    display: grid;
-    width: 100%;
-    min-height: 90vh;
+    display: flex;
 }
 
 .sidebar {
+    width: 100%;
+    min-height: 90vh;
     width: fit-content;
     top: 0;
     left: 0;
@@ -153,4 +153,10 @@ section {
     .nav-items {
         display: none;
     }
+}
+.cpanel{
+    display: flex;
+    margin: 50px;
+    justify-content: center;
+    width: 100%;
 }
