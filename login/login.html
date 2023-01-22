@@ -32,11 +32,11 @@
                 <h5>Inicia sesión</h5>
                 <div class="input-box">
                     <span class="details">Email</span>
-                    <input type="email" placeholder="Introduce tu email" required>
+                    <input type="email">
                 </div>
                 <div class="input-box">
                     <span class="details">Contraseña</span>
-                    <input type="password" placeholder="Introduce una contraseña" required>
+                    <input type="password">
                 </div>
 
                 <div class="input-box">
@@ -44,9 +44,17 @@
                 </div>
                 <div class="account-box">
                     <p>¿Aún no tienes una cuenta? <a href="signup.html">Registrate</a>.</p>
+                    <p>Login y registro no implementado<a href="../dashboard/index.html"> Ir al dashboard</a>.</p>
                 </div>
 
             </form>
+            <script>
+                //Field Placeholder to use with DJANGO
+                var form_fields = document.getElementsByTagName('input')
+                form_fields[0].placeholder = "Introduce tu email";
+                form_fields[1].placeholder = "Introduce tu contraseña";
+            </script>
+
         </div>
 
     </section>

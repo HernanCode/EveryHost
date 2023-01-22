@@ -30,20 +30,20 @@
             <form action="index.html">
                 <h5>Registro</h5>
                 <div class="input-box">
-                    <span class="details">Nombre completo</span>
-                    <input type="text" placeholder="Introduce tu nombre y apellidos" required>
+                    <span class="details">Nombre de usuario</span>
+                    <input type="text">
                 </div>
                 <div class="input-box">
                     <span class="details">Email</span>
-                    <input type="email" placeholder="Introduce tu email" required>
+                    <input type="email">
                 </div>
                 <div class="input-box">
                     <span class="details">Contraseña</span>
-                    <input type="password" placeholder="Introduce una contraseña" required>
+                    <input type="password">
                 </div>
                 <div class="input-box">
                     <span class="details">Confirma contraseña</span>
-                    <input type="text" placeholder="Vuelve a introducir la contraseña" required>
+                    <input type="text">
                 </div>
                 <div class>
                 </div>
@@ -52,10 +52,20 @@
                 </div>
                 <div class="account-box">
                     <p>¿Ya tienes una cuenta? <a href="login.html">Inicia sesión</a>.</p>
+                    <p>Login y registro no implementado<a href="../dashboard/index.html"> Ir al dashboard</a>.</p>
                 </div>
                 <p id="messages">Usuario creado exitosamente</p>
-                <div id="error">Error al crear el usuario</div></p>
+                <div id="error">Error al crear el usuario</div>
+                </p>
             </form>
+            <script>
+                //Field Placeholder to use with DJANGO
+                var form_fields = document.getElementsByTagName('input')
+                form_fields[0].placeholder = "Introduce tu nombre de usuario";
+                form_fields[1].placeholder = "Introduce tu email";
+                form_fields[2].placeholder = "Introduce tu contraseña";
+                form_fields[3].placeholder = "Repita su contraseña";
+            </script>
 
 
 

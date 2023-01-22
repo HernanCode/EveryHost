@@ -159,6 +159,9 @@ nav img.sticky {
     font-family: 'Epilogue';
     flex: 1;
     text-align: center;
+}
+
+.info h4 {
     letter-spacing: -2px;
 }
 

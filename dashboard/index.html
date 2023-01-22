@@ -10,6 +10,7 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <link href='https://fonts.googleapis.com/css?family=Epilogue' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="main.js"></script>
 </head>
 
 <body>
@@ -34,13 +35,28 @@
                 </a>
             </div>
             <div class="sidebar-bottom-items">
-                <a href="#">
+                <a href="../index.html">
                     <i class=" icon icon-3 ri-logout-box-r-line"></i>
                 </a>
             </div>
         </div>
-        <div class="cpanel">
-            <h2>asasdasdasd</h2>
+        <div class="dashboard">
+            <div class="server-parent">
+                <div class="server">
+                    <div class="server-icon">
+                        <img src="../assets/firewall.svg" alt="">
+                    </div>
+                    <ul class="server-details">
+                        <li>Hostname:<span class="data">web.ehpages.com</span></li>
+                        <li>Status:<span class="data signal">ONLINE</span></li>
+                        <li>Port:<span class="data">9840</span></li>
+                    </ul>
+                </div>
+                <div class="control">
+                    <button class="button-panel stop" role="button">Stop</button>
+                    <button class="button-panel start" role="button">Start</button>
+                </div>
+            </div>
         </div>
     </section>
 </body>
