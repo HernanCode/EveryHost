@@ -322,3 +322,7 @@ footer .license small {
     margin-right: 20%;
     border: none;
 }
+
+.info h1 {
+    font-size: 3em;
+}
