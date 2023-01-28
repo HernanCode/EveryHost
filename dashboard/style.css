@@ -273,24 +273,86 @@ li {
     outline: none;
 }
 
-.server-form {
-    margin: 10px;
-    background-color: rgb(241, 235, 235);
-    border-radius: 5px;
-    text-align: center;
+.main {
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
-form {
+.server-form {
+    justify-content: center;
     display: flex;
     flex-direction: column;
 }
 
+.server-form h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+form {
+    padding: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.input-box {
+    margin: 10px;
+}
+
+.input-box p {
+    font-weight: 600;
+}
+
+.input-box input {
+    background-color: rgb(223, 220, 220);
+    height: 40px;
+    width: 100%;
+    margin-top: 2px;
+    outline: none;
+    font-size: 1em;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 0px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.input-box input:focus {
+    box-shadow: rgb(0, 105, 255) 3px 4px 0px;
+}
+
+.warning {
+    font-weight: 600;
+    color: #c0871e;
+    margin: 10px;
+}
+
+.submit-btn {
+    font-weight: bold;
+    background-color: rgb(0, 105, 255);
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 5px;
+}
+
 .server-form .server-radio {
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
     margin: 10px;
     padding: 15px;
     border-radius: 5px;
     background-color: #d6d8db;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .server-radio img {
@@ -300,15 +362,33 @@ form {
 }
 
 .server-radio:hover {
-    background-color: #b2b7be;
+    box-shadow: rgb(0, 105, 255) 3px 4px 0px;
     transition: all 0.3s ease;
-}
-
-.server-radio::after {
-    background-color: #b2b7be;
 }
 
 .select {
     justify-content: center;
     display: flex;
+}
+
+#messages {
+    font-weight: 600;
+    background-color: rgb(223, 220, 220);
+    border-radius: 5px;
+    margin-top: 10px;
+    color: rgb(36, 51, 90);
+    box-shadow: rgb(46, 189, 27) 0px 0px 0px 2px;
+    text-align: center;
+    padding: 10px;
+}
+
+#error {
+    font-weight: 600;
+    background-color: rgb(223, 220, 220);
+    box-shadow: rgb(255, 0, 0) 0px 0px 0px 2px;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: rgb(36, 51, 90);
+    text-align: center;
+    padding: 10px;
 }
