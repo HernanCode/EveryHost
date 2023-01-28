@@ -272,3 +272,43 @@ li {
     box-shadow: rgba(247, 135, 101, 0.4) 0 0 0 3px;
     outline: none;
 }
+
+.server-form {
+    margin: 10px;
+    background-color: rgb(241, 235, 235);
+    border-radius: 5px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.server-form .server-radio {
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #d6d8db;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.server-radio img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.server-radio:hover {
+    background-color: #b2b7be;
+    transition: all 0.3s ease;
+}
+
+.server-radio::after {
+    background-color: #b2b7be;
+}
+
+.select {
+    justify-content: center;
+    display: flex;
+}
