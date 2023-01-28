@@ -253,6 +253,10 @@ footer .first {
     padding: 45px 0px;
 }
 
+footer .first .box {
+    text-align: center;
+}
+
 footer .first .box figure {
     width: 100%;
     height: 100%;

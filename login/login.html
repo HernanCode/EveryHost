@@ -19,9 +19,8 @@
             </div>
             <div class="nav-items">
                 <a href="#">About Us </a>
-                <a href="login.html">Login</a>
-                <a href="signup.html">Signup</a>
-                <!----<a href="#"><i class="fa fa-search"></i></a>-->
+                <a href="login.html">Log in</a>
+                <a href="signup.html">Sign up</a>
             </div>
 
         </nav>
@@ -29,13 +28,13 @@
     <section>
         <div class="user-details">
             <form action="index.html">
-                <h5>Inicia sesión</h5>
+                <h5>Login</h5>
                 <div class="input-box">
                     <span class="details">Email</span>
                     <input type="email">
                 </div>
                 <div class="input-box">
-                    <span class="details">Contraseña</span>
+                    <span class="details">Password</span>
                     <input type="password">
                 </div>
 
@@ -43,16 +42,16 @@
                     <button type="submit" class="registerbtn">Register</button>
                 </div>
                 <div class="account-box">
-                    <p>¿Aún no tienes una cuenta? <a href="signup.html">Registrate</a>.</p>
-                    <p>Login y registro no implementado<a href="../dashboard/index.html"> Ir al dashboard</a>.</p>
+                    <p>Don't have an account yet? <a href="signup.html">Registrate</a>.</p>
+                    <p>Go to <a href="../dashboard/index.html"> dashboard directly</a>.</p>
                 </div>
 
             </form>
             <script>
                 //Field Placeholder to use with DJANGO
                 var form_fields = document.getElementsByTagName('input')
-                form_fields[0].placeholder = "Introduce tu email";
-                form_fields[1].placeholder = "Introduce tu contraseña";
+                form_fields[0].placeholder = "Introduce your email";
+                form_fields[1].placeholder = "Introduce your password";
             </script>
 
         </div>
