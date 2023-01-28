@@ -40,22 +40,42 @@
                 </a>
             </div>
         </div>
-        <div class="server-form">
-            <h2>Select server</h2>
-            <form>
-                <input type="text" placeholder="Write the subdomain">
-                <div class="select">
-                    <label class="server-radio">
-                        <input type="radio" name="image-choice" value="option1" checked>
-                        <img src="/assets/javascript.svg" alt="Option 1">
-                      </label>
-                    <label class="server-radio">
-                        <input type="radio" name="image-choice" value="option2">
-                        <img src="/assets/wordpress.svg" alt="Option 2">
-                      </label>
-                </div>
-            </form>
+        <div class="main">
+            <div class="server-form">
+                <form>
+                    <h2>Create new server</h2>
+                    <div class="input-box">
+                        <p>Subdomain</p>
+                        <input type="text" placeholder="Write the subdomain">
+                    </div>
+                    <p class="warning">Write only the subdomain*</p>
+                    <div class="input-box">
+                        <p>Select the server</p>
+                    </div>
+                    <div class="select">
+                        <label class="server-radio">
+                            <span>Only frontend</span>
+                            <img src="/assets/javascript.svg" alt="Option 1">
+                            <input type="radio" name="image-choice" value="option1" checked>
+                          </label>
+                        <label class="server-radio">
+                            <span>Wordpress</span>
+                            <img src="/assets/wordpress.svg" alt="Option 2">
+                            <input type="radio" name="image-choice" value="option2">
+                          </label>
+                    </div>
+                    <div class="input-box">
+                        <p>Website repository</p>
+                        <input type="text" placeholder="Write github repository">
+                    </div>
+                    <div class="input-box">
+                        <button type="submit" class="submit-btn">Register</button>
+                    </div>
+                    <div id="messages">Server created succesfully</div>
+                    <div id="error">Error creating a server</div>
+                </form>
 
+            </div>
         </div>
     </section>
 </body>
