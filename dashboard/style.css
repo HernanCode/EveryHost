@@ -22,6 +22,11 @@ a {
     text-decoration: none;
 }
 
+html {
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+}
+
 
 /*Encabezado*/
 
@@ -95,15 +100,13 @@ section {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-    font-size: 1.1rem;
-    color: #000;
+    font-size: 1.2rem;
+    color: rgb(36, 51, 90);
     padding: 10px;
-    border-radius: 10px;
 }
 
 .sidebar a:hover {
-    background-color: #5073fb;
-    color: #fff;
+    color: rgb(0, 105, 255);
 }
 
 .icon {
@@ -118,114 +121,81 @@ section {
     border: 2px solid #f1f1f1;
 }
 
-
-/* Colores de los iconos*/
-
-.icon-1 {
-    color: rgb(0, 105, 255);
-}
-
-.icon-2 {
-    color: #000000;
-}
-
-.icon-3 {
-    color: #ff0a0a;
-}
-
-@media screen and (max-width:500px) {
-    /*Mobile version*/
-    header {
-        align-items: center;
-    }
-    nav {
-        align-items: center;
-    }
-    nav img {
-        height: 20px;
-    }
-    .info {
-        font-size: 2.5em;
-    }
-    html {
-        font-size: 0.8em;
-    }
-    .nav-items {
-        display: none;
-    }
+.dashboard {
+    margin: 0 auto;
 }
 
 .server-parent {
+    height: 92vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: min-content;
+    grid-gap: 10px;
+}
+
+.flex-row {
     display: flex;
-    flex-direction: column;
-    margin: 20px;
-    align-items: center;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    padding: 10px;
-    border-radius: 4px;
-    white-space: nowrap;
-    background-color: rgba(194, 167, 167, 0.1);
+}
+
+@media (max-width: 950px) {
+    .sidebar {
+        display: none;
+    }
+    .server-parent {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 .server {
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     display: flex;
+    max-width: 450px;
 }
 
 .server-icon {
-    justify-content: center;
-    display: inline-block;
-    font-size: 2.5rem;
-    margin: 10px;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    margin-right: 10px;
+    background-color: rgb(0, 105, 255);
+    flex: 1;
 }
 
 .server-icon img {
-    justify-content: center;
+    margin: 1;
     width: 2em;
-}
-
-.server-details {
-    flex: 1;
-    display: block;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
-
-li {
-    display: list-item;
-    text-align: -webkit-match-parent;
+    justify-content: center;
 }
 
 .server-details li {
-    display: block;
     font-size: 1.2rem;
     line-height: 1.5;
-    color: #7e8794;
+    color: #323544;
+    font-weight: 600;
 }
 
 .server-details .data {
     margin-left: 1rem;
     font-weight: 600;
     text-align: right;
-    color: #c1c6cb;
+    color: rgb(0, 105, 255);
 }
 
-.server-details .signal {
-    color: #2eb35a;
+.server-details .on {
+    color: #31b816;
 }
 
-.server-details li:last-child .data {
-    color: rgba(206, 28, 28, 0.32);
+.server-details .off {
+    color: rgb(255, 0, 0);
+}
+
+.server-details .port {
+    color: #D6CC32;
 }
 
 .control {
@@ -233,8 +203,9 @@ li {
     text-align: center;
 }
 
-
-/* CSS */
+.control form button {
+    margin: 2px;
+}
 
 .button-panel {
     border: 1px solid rgba(27, 31, 35, .15);
@@ -248,7 +219,7 @@ li {
 }
 
 .start {
-    background-color: #2ea44f;
+    background-color: #31b816;
 }
 
 .start:hover {
@@ -261,11 +232,11 @@ li {
 }
 
 .stop {
-    background-color: rgb(221, 42, 42);
+    background-color: rgb(255, 0, 0);
 }
 
 .stop:hover {
-    background-color: #f52020;
+    background-color: #aa0e0e;
 }
 
 .stop:focus {
@@ -291,7 +262,7 @@ li {
     margin-bottom: 40px;
 }
 
-form {
+.server-form form {
     padding: 20px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     margin: 10px;
@@ -345,6 +316,7 @@ form {
 }
 
 .server-form .server-radio {
+    align-items: center;
     font-weight: 600;
     text-align: center;
     display: flex;
@@ -371,24 +343,34 @@ form {
     display: flex;
 }
 
-#messages {
-    font-weight: 600;
-    background-color: rgb(223, 220, 220);
-    border-radius: 5px;
-    margin-top: 10px;
-    color: rgb(36, 51, 90);
-    box-shadow: rgb(46, 189, 27) 0px 0px 0px 2px;
+#succesfull {
     text-align: center;
-    padding: 10px;
+    margin: 0;
+    width: 100%;
+    padding: 7px;
+    background-color: #d0f5c7;
+    border: 1px solid #33ff00;
+    padding: 20px;
+    z-index: -1;
+}
+
+#succesfull p {
+    color: #388820;
+    font-weight: 600;
 }
 
 #error {
-    font-weight: 600;
-    background-color: rgb(223, 220, 220);
-    box-shadow: rgb(255, 0, 0) 0px 0px 0px 2px;
-    border-radius: 5px;
-    margin-top: 10px;
-    color: rgb(36, 51, 90);
     text-align: center;
-    padding: 10px;
+    margin: 0;
+    width: 100%;
+    padding: 7px;
+    background-color: #f1d9d9;
+    border: 1px solid #ec5c5e;
+    padding: 20px;
+    z-index: -1;
+}
+
+#error p {
+    color: #cc0033;
+    font-weight: 600;
 }

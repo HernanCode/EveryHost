@@ -240,7 +240,6 @@ footer {
     margin: 0;
     width: 100%;
     background-color: rgb(195, 206, 223);
-    margin-top: 100px;
 }
 
 footer .first {
@@ -329,4 +328,46 @@ footer .license small {
 
 .info h1 {
     font-size: 3em;
+}
+
+.custom-shape-divider-bottom-1675409348 {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1675409348 svg {
+    display: block;
+    width: calc(223% + 1.3px);
+    height: 87px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1675409348 .shape-fill {
+    fill: #ffffff;
+}
+
+.grey .shape-fill {
+    fill: rgb(195, 206, 223);
+}
+
+.custom-shape-divider-bottom-1675412655 {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1675412655 svg {
+    position: relative;
+    display: block;
+    width: calc(132% + 1.3px);
+    height: 41px;
+}
+
+.custom-shape-divider-bottom-1675412655 .shape-fill {
+    fill: #0069FF;
 }

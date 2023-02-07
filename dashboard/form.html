@@ -46,7 +46,7 @@
                     <h2>Create new server</h2>
                     <div class="input-box">
                         <p>Subdomain</p>
-                        <input type="text" placeholder="Write the subdomain">
+                        <input type="text">
                     </div>
                     <p class="warning">Write only the subdomain*</p>
                     <div class="input-box">
@@ -55,29 +55,47 @@
                     <div class="select">
                         <label class="server-radio">
                             <span>Only frontend</span>
-                            <img src="../assets/javascript.svg" alt="Option 1">
+                            <img src="/assets/javascript.svg" alt="Option 1">
                             <input type="radio" name="image-choice" value="option1" checked>
                           </label>
                         <label class="server-radio">
                             <span>Wordpress</span>
-                            <img src="../assets/wordpress.svg" alt="Option 2">
+                            <img src="/assets/wordpress.svg" alt="Option 2">
                             <input type="radio" name="image-choice" value="option2">
                           </label>
                     </div>
                     <div class="input-box">
                         <p>Website repository</p>
-                        <input type="text" placeholder="Write github repository">
+                        <input type="text">
+                    </div>
+                    <div class="input-box">
+                        <p>Database user</p>
+                        <input type="text">
+                    </div>
+                    <div class="input-box">
+                        <p>Database password</p>
+                        <input type="text">
                     </div>
                     <div class="input-box">
                         <button type="submit" class="submit-btn">Register</button>
                     </div>
-                    <div id="messages">Server created succesfully</div>
-                    <div id="error">Error creating a server</div>
+                    <div id="succesfull">
+                        <p>The website was successfully created</p>
+                    </div>
+
                 </form>
+                <script>
+                    var form_fields = document.getElementsByTagName('input')
+                    form_fields[0].placeholder = "Write the subdomain";
+                    form_fields[3].placeholder = "Write github repository";
+                    form_fields[4].placeholder = "Introduce db user";
+                    form_fields[5].placeholder = "Your password";
+                </script>
 
             </div>
         </div>
     </section>
+
 </body>
 
 </html>
