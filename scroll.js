@@ -12,3 +12,7 @@ window.addEventListener('scroll', function() {
         img1.style.display = 'flex';
     }
 });
+
+const petidle = document.getElementById('idle')
+const petMove = document.getElementById('move')
+onclick = (event) => { petidle.display = 'none', pet.display = "flex" };
